@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: zomato
-  name: zomato-deploy
+  name: movies-deploy
 spec:
   replicas: 4
   selector:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: rahamshaik/zomatoproject:myzomatoimage
+        image: sivanankatta/movies:latest
 
         ports:
           - containerPort: 80
